@@ -49,7 +49,7 @@
   display: flex !important;
   flex-wrap: wrap;
   margin: 0;
-  padding: 0;
+  padding: 0px !important;  /* JNell 27/7: Modified */
   width: 100%;
   justify-content: space-between;
 }
@@ -69,7 +69,7 @@
 }
 
 .header-lower .hs-menu-wrapper ul li.hs-menu-item.hs-menu-depth-1 {
-  margin: 0 25px;
+  margin: 20px 25px;  /* JNell 27/7: Modified */
 }
 
 .header-lower .hs-menu-wrapper ul.hs-menu-children-wrapper li.hs-menu-item a {
@@ -103,13 +103,13 @@
 .header-two-cta ul li:first-child a {
   background: #0080bd;
   display: inline-block;
-  padding: 25px 42px;
+  padding: 20px 42px;  /* JNell 27/7: Modified */
 }
 
 .header-two-cta ul li:last-child a {
   background: #f0533f;
   display: inline-block;
-  padding: 25px 42px;
+  padding: 20px 42px;  /* JNell 27/7: Modified */
 }
 
 .header-module.header-fixed {
@@ -952,14 +952,20 @@ ul.options {
   }
 
   .header-lower .hs-menu-wrapper ul li.hs-menu-item.hs-menu-depth-1 {
-    margin: 0 20px;
+    margin: 20px 20px;  /* JNell 27/7: Modified */
   }
 }
 
 @media(max-width:1680px) {
   .header-lower .hs-menu-wrapper ul li a {
     font-size: 14px;
-    line-height: 20px;
+    line-height: 24px;  /* JNell 27/7: Modified */
+  }
+  
+  /* JNell 27/7: Added */
+  .header-lower .hs-menu-wrapper ul li.hs-menu-item.hs-menu-depth-1 a {
+    font-size: 14px;
+    line-height: 24px;
   }
 
   .header-two-cta ul li:first-child a {
@@ -967,7 +973,7 @@ ul.options {
     display: inline-block;
     padding: 20px 25px;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 24px;  /* JNell 27/7: Modified */
   }
 
   .header-two-cta ul li:last-child a {
@@ -975,7 +981,7 @@ ul.options {
     display: inline-block;
     padding: 20px 25px;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 24px;  /* JNell 27/7: Modified */
   }
 
   .header-lower .hs_cos_wrapper_type_menu {
@@ -992,11 +998,46 @@ ul.options {
 
 @media(max-width:1500px) {
   .header-lower .hs-menu-wrapper ul li.hs-menu-item.hs-menu-depth-1 {
-    margin: 0 10px;
+    margin: 20px 10px;  /* JNell 27/7: Modified */
   }
 
   .header-lower .hs-menu-wrapper ul li.hs-menu-item.hs-menu-depth-1 a {
     font-size: 13px
+  }
+}
+
+/* JNell 27/7: Added */
+@media(max-width:1280px) {
+  .header-lower .hs-menu-wrapper ul li a {
+    font-size: 13px;
+    line-height: 24px;
+  }
+
+  .header-two-cta ul li:first-child a {
+    background: #0080bd;
+    display: inline-block;
+    padding: 20px 10px;
+    font-size: 13px;
+    line-height: 24px;
+  }
+
+  .header-two-cta ul li:last-child a {
+    background: #f0533f;
+    display: inline-block;
+    padding: 20px 10px;
+    font-size: 13px;
+    line-height: 24px;
+  }
+
+  .header-lower .hs_cos_wrapper_type_menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: calc(100% - 295px);
+  }
+
+  .header-two-cta {
+    width: 295px;
   }
 }
 
@@ -1083,8 +1124,8 @@ ul.options {
   }
 
   .header-lower .hs-menu-wrapper ul li.hs-menu-item.hs-menu-depth-1 a {
-    font-size: 13px;
-    line-height: 20px;
+    font-size: 12px;  /* JNell 27/7: Modified */
+    line-height: 24px;  /* JNell 27/7: Modified */
   }
 
   .header-lower .hs-menu-item.hs-menu-depth-2 a {
@@ -1125,11 +1166,11 @@ ul.options {
   }
 
   .header-lower .hs-menu-wrapper ul li.hs-menu-item.hs-menu-depth-1 {
-    margin: 0 8px;
+    margin: 20px 5px;  /* JNell 27/7: Modified */
   }
 
   .header-lower .hs-menu-wrapper ul li.hs-menu-item.hs-menu-depth-1 a {
-    font-size: 12px
+    font-size: 11px;  /* JNell 27/7: Modified */
   }
 
 }
@@ -1254,12 +1295,12 @@ ul.options {
     margin: 0;
     display: inline-block !important;
     text-align: left;
-    padding: 10px 20px;
+    padding: 20px 20px;  /* JNell 27/7: Modified */
     position: relative;
   }
 
   .header-two-cta ul li a {
-    padding: 10px 15px !important;
+    padding: 20px 15px !important;  /* JNell 27/7: Modified */
   }
 
   .header-lower .hs-menu-wrapper ul li.hs-menu-item.hs-menu-depth-1 a {
@@ -1432,7 +1473,7 @@ ul.options {
 
   .header-two-cta ul li a {
     font-size: 12px !important;
-    line-height: 17px !important;
+    line-height: 24px !important;  /* JNell 27/7: Modified */
   }
 }
 
