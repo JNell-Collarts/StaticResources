@@ -18,8 +18,8 @@ body {
 }
 
 .row-fluid-wrapper:last-child .hs-menu-wrapper.hs-menu-flow-horizontal>ul {
-  margin-top: 1.6rem !important;
-  margin-bottom: 1.6rem !important;
+  /* margin-top: 1.6rem !important; */  /* JNell 27/7: Removed for NavMenu fix */
+  /* margin-bottom: 1.6rem !important; */  /* JNell 27/7: Removed for NavMenu fix */
 }
 
 .hs-item-has-children {
